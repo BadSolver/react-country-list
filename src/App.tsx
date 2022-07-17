@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -19,6 +20,18 @@ function App() {
           Learn React
         </a>
       </header>
+=======
+import { CountryList } from "./components/CountryList";
+import { transformedDataCountries } from "./mappers/transformedData";
+
+function App() {
+  transformedDataCountries()
+  return (
+    <div className="wrapper">
+      <div className="container">
+        <CountryList countries={transformedDataCountries()}/>
+      </div>
+>>>>>>> 6e229ad928d76dc886744f1e3adb72f4034276b1
     </div>
   );
 }
