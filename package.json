@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "name": "react-contry-list1",
+=======
   "name": "react-country-list",
+>>>>>>> 6e229ad928d76dc886744f1e3adb72f4034276b1
   "version": "0.1.0",
   "private": true,
   "dependencies": {
