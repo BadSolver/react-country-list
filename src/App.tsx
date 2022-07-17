@@ -1,13 +1,13 @@
 import { CountryList } from "./components/CountryList";
-import { transformedDataCountries } from "./mappers/index";
+import { transformedCountriesData } from "./mappers/index";
 
-function App() {
-  transformedDataCountries()
+export const App = () => {
+  transformedCountriesData();
   return (
     <div className="wrapper">
       <div className="container">
-        <CountryList countries={transformedDataCountries()}/>
+        <CountryList countries={transformedCountriesData()} />
       </div>
     </div>
   );
-}
+};
