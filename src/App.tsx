@@ -1,13 +1,15 @@
 import { CountryList } from "./components/CountryList";
-import { transformedCountriesData } from "./mappers/index";
+import countriesData from './data/countriesData.json'
+import { transformedCountries } from "./mappers/index";
 
 export const App = () => {
-  transformedCountriesData();
+  const transformedData =  transformedCountries(countriesData);
   return (
     <div className="wrapper">
       <div className="container">
-        <CountryList countries={transformedCountriesData()} />
+        <CountryList countries={transformedData} />
       </div>
     </div>
   );
 };
+

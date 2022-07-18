@@ -25,5 +25,5 @@ export interface ICountryApi {
   region: string;
   area: number;
   name: { common: string };
-  flag: { svg: string }
+  flags: { svg: string }
 }
