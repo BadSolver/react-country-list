@@ -1,16 +1,15 @@
-import countriesData from "../data/countriesData.json";
-import { ICountry } from "../types";
+import { ICountry, ICountryApi } from "../types";
 
-export const transformedCountriesData = () => {
-  const newCountriesData: ICountry[] = countriesData.map(
-    (country): ICountry => ({
-      name: country.name.common,
-      capital: country.capital[0],
-      population: country.population,
-      flag: country.flags.svg,
-      area: country.area,
-      region: country.region,
-    })
-  );
-  return newCountriesData;
+export const transformedCountries = (countries: ICountryApi[]): ICountry[] => {
+  const newCountriesData = countries.map(
+      (country): ICountry => ({
+        name: country.name.common,
+        capital: country.capital[0],
+        population: country.population,
+        flag: country.flags.svg,
+        area: country.area,
+        region: country.region,
+      })
+  )
+  return newCountriesData
 };
