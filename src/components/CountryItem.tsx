@@ -12,8 +12,8 @@ export const CountryItem = ({ country }: ICountryItem) => {
       <h5 className="col-2 m-0">{country.name}</h5>
       <p className="col-2 m-0">{country.capital}</p>
       <p className="col-2  m-0">{country.region}</p>
-      <Badge color={Color.Dark} value={country.area} label={`area`}/>
-      <Badge color={Color.Primary} value={country.population} label={`population`} />
+      <Badge color={Color.Dark} value={country.area} label='area'/>
+      <Badge color={Color.Primary} value={country.population} label='population'/>
     </li>
   );
 };

@@ -7,5 +7,5 @@ interface IBadge {
 }
 
 export const Badge = ({ color, value, label }: IBadge) => {
-  return <button className={`badge bg-${color} col-2 m-0`} >{`${label}: ${value}`}</button>;
+  return <button className={`badge bg-${color} col-2 m-0`}>{label}: {value}</button>;
 };

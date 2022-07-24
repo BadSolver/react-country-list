@@ -24,6 +24,22 @@ export interface ICountryApi {
   population: number;
   region: string;
   area: number;
-  name: { common: string };
-  flags: { svg: string }
+  name: ICountryNameApi;
+  flags: ICountryFlagApi
+}
+
+interface ICountryFlagApi {
+  png: string;
+  svg: string;
+}
+
+interface ICountryNameApi {
+  common: string;
+  official: string;
+  nativeName: {
+    [key: string]: {
+      official: string;
+      common: string;
+    } | undefined;
+  }
 }
